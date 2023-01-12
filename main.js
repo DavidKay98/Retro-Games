@@ -8,13 +8,13 @@ window.onload = (event) => {
 };
 
 //Avatar constants, events and functions
-var avatar = document.querySelector('#avatar');
-var imageAvatar = document.querySelector('#image-avatar');
+let avatar = document.querySelector('#avatar');
+let imageAvatar = document.querySelector('#image-avatar');
 imageAvatar.style.backgroundRepeat = "no-repeat";
 avatar.addEventListener('change', avatars);
 
 function avatars(){
-  var choice = avatar.value;
+  let choice = avatar.value;
 
   if(choice === 'chara'){
     imageAvatar.style.backgroundImage = "url('Avatar/Chara.png')";
@@ -48,13 +48,13 @@ document.querySelector("#avatar").value = localStorage.getItem("AvatarImage");
 }
 
 //Weapon constants, events and functions
-var weapon = document.querySelector('#weapon');
-var imageWeapon = document.querySelector('#image-weapon');
+let weapon = document.querySelector('#weapon');
+let imageWeapon = document.querySelector('#image-weapon');
 imageWeapon.style.backgroundRepeat = "no-repeat";
 weapon.addEventListener('change', weapons);
 
 function weapons(){
-  var choice = weapon.value;
+  let choice = weapon.value;
 
   if(choice === 'sword'){
     imageWeapon.style.backgroundImage = "url('Weapon/Sword.png')";
@@ -87,13 +87,13 @@ document.querySelector("#weapon").value = localStorage.getItem("WeaponImage");
 }
 
 //Element constants, events and functions
-var element = document.querySelector('#element');
-var imageElement = document.querySelector('#image-element');
+let element = document.querySelector('#element');
+let imageElement = document.querySelector('#image-element');
 imageElement.style.backgroundRepeat = "no-repeat";
 element.addEventListener('change', elements);
 
 function elements(){
-  var choice = element.value;
+  let choice = element.value;
 
   if(choice === 'fire'){
     imageElement.style.backgroundImage = "url('Element/Fire.png')";
@@ -128,13 +128,13 @@ document.querySelector("#element").value = localStorage.getItem("ElementImage");
 }
 
 //Build constants, events and functions
-var build = document.querySelector('#build');
-var imageBuild = document.querySelector('#image-build');
+let build = document.querySelector('#build');
+let imageBuild = document.querySelector('#image-build');
 imageBuild.style.backgroundRepeat = "no-repeat";
 build.addEventListener('change', builds);
 
 function builds(){
-  var choice = build.value;
+  let choice = build.value;
 
   if(choice === 'warrior'){
     imageBuild.style.backgroundImage = "url('Build/Warrior.png')";
