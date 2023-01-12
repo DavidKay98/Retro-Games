@@ -1,0 +1,95 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+}
+
+body{
+  background-image: url(Mountains/Mountains.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: cover;
+  background-position: center;
+}
+
+header{
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: larger;
+  padding: 2em;
+  color: white;
+}
+
+main{
+  padding: 2em;
+}
+
+#name{
+  height: 2em;
+  font-size: 1.4em;
+}
+
+#log{
+  text-align: center;
+  font-weight: bold;
+  font-size: 3em;
+  color: yellow;
+  padding: 1em;
+}
+
+
+div{
+  background-image: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.image-container{
+  border-style: double;
+  border-color: brown;
+  border-width: thick;
+  background-color: black;
+}
+
+label{
+  margin-top: 1.5em;
+  font-size: 2em;
+  color: white;
+}
+
+button{
+  margin-top: 3em;
+  height: 3em;
+  width: 20em;
+}
+#footer{
+  text-align: center;
+  background-color: aliceblue;
+}
+/*Flex box*/
+.display-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+
+}
+
+.image-container{
+  height: 20rem;
+  width: 30rem;
+  max-width: calc(100vw - 80px);
+  max-height: calc(100vh - 2em);
+}
+
+/*Media Query*/
+@media screen and (min-width: 880px){
+  #grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 10em;
+  }
+}

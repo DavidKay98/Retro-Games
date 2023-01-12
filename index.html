@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!--Body start-->
+  <body>
+    <header>
+      <h1>Character select</h1>
+    </header>
+    <!--Player Name Textbox-->
+    <main>
+      <form id="form">
+      <div class="display-container">
+        <label for="name">Player Name</label>
+        <input type="text" name="name" id="name" placeholder=''/>
+      </div>
+      <p id='welcome'></p>
+      <!-- Avatar select list and image container-->
+      <section id="grid-container">
+        <div class="display-container">
+          <label for="avatars">Select Avatar</label>
+          <select id="avatar">
+            <option value="choose">Make a choice</option>
+            <option value="chara">Chara</option>
+            <option value="flappy-bird">Flappy Bird</option>
+            <option value="mario">Mario</option>
+            <option value="nyan-cat">Nyan Cat</option>
+          </select>
+          <div id="image-avatar" class="image-container"></div>
+        </div>
+        <!-- Weapon select list and image container-->
+        <div class="display-container">
+          <label for="weapons">Select Weapon</label>
+          <select id="weapon">
+            <option value="choose">Make a choice</option>
+            <option value="sword">Sword</option>
+            <option value="axe">Axe</option>
+            <option value="hammer">Hammer</option>
+            <option value="bow">Bow</option>
+          </select>
+          <div id="image-weapon" class="image-container"></div>
+        </div>
+        <!-- Element select list and image container-->
+        <div class="display-container">
+          <label for="elements">Select Element</label>
+          <select id="element">
+            <option value="choose">Make a choice</option>
+            <option value="fire">Fire</option>
+            <option value="water">Water</option>
+            <option value="earth">Earth</option>
+            <option value="wind">Wind</option>
+          </select>
+          <div id="image-element" class="image-container"></div>
+        </div>
+        <!-- Class select list and image container-->
+        <div class="display-container">
+          <label for="builds">Select Build</label>
+          <select id="build">
+            <option value="choose">Make a choice</option>
+            <option value="warrior">Warrior</option>
+            <option value="mage">Mage</option>
+            <option value="healer">Healer</option>
+            <option value="thief">Thief</option>
+          </select>
+          <div id="image-build" class="image-container"></div>
+        </div>
+      </section>
+      <!--Save Player Credentials Submit Box-->
+      <div class="display-container">
+        <button type="submit">Save</button>
+      </div>
+      <p id='log'></p>
+    </main>
+  </form>
+  <footer id='footer'>
+    <p>Retro Games</p>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+  <!--Body end-->
+</html>
